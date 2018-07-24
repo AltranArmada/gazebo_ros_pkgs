@@ -58,6 +58,7 @@ namespace gazebo
     private: int laser_connect_count_;
     private: void LaserConnect();
     private: void LaserDisconnect();
+    private: float last_time;
 
     // Pointer to the model
     GazeboRosPtr gazebo_ros_;
@@ -76,7 +77,7 @@ namespace gazebo
 
     /// \brief frame transform name, should match link name
     private: std::string frame_name_;
-
+    
     /// \brief tf prefix
     private: std::string tf_prefix_;
 
