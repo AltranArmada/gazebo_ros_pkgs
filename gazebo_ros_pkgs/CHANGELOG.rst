@@ -2,7 +2,19 @@
 Changelog for package gazebo_ros_pkgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+<<<<<<< HEAD
 2.4.15 (2017-08-09)
+=======
+2.5.19 (2019-06-04)
+-------------------
+* Remove extra angle bracket (`#893 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/893>`_)
+* Contributors: David V. Lu!!
+
+2.5.18 (2019-01-23)
+-------------------
+
+2.5.17 (2018-06-07)
+>>>>>>> 00a0064a1477667dfed75c3d22d91f14224db3a1
 -------------------
 
 2.4.14 (2017-06-24)

@@ -332,7 +332,18 @@ void DefaultRobotHWSim::writeSim(ros::Time time, ros::Duration period)
 
       case VELOCITY:
 #if GAZEBO_MAJOR_VERSION > 2
+<<<<<<< HEAD
         sim_joints_[j]->SetParam("vel", 0, e_stop_active_ ? 0 : joint_velocity_command_[j]);
+=======
+        if (physics_type_.compare("ode") == 0)
+        {
+          sim_joints_[j]->SetParam("vel", 0, e_stop_active_ ? 0 : joint_velocity_command_[j]);
+        }
+        else 
+        {
+          sim_joints_[j]->SetVelocity(0, e_stop_active_ ? 0 : joint_velocity_command_[j]);
+        }
+>>>>>>> 00a0064a1477667dfed75c3d22d91f14224db3a1
 #else
         sim_joints_[j]->SetVelocity(0, e_stop_active_ ? 0 : joint_velocity_command_[j]);
 #endif

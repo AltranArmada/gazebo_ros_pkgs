@@ -2,7 +2,24 @@
 Changelog for package gazebo_ros_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+<<<<<<< HEAD
 2.4.15 (2017-08-09)
+=======
+2.5.19 (2019-06-04)
+-------------------
+
+2.5.18 (2019-01-23)
+-------------------
+* Add unified velocity hardware interface support for other physics engines except ODE
+* Add velocity interface support for bullet and dart physics engines
+  (`#790 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/790>`)
+* Don't ignore robotNamespace (`#637 <https://github.com/ros-simulation/gazebo_ros_pkgs/issues/637>`_)
+  When creating the NodeHandle for reading the PID parameters, the model_nh was always ignored.
+* Add physics type for dart with joint velocity interface
+* Contributors: Jack Liu, Kevin Allen, Santiago Focke
+
+2.5.17 (2018-06-07)
+>>>>>>> 00a0064a1477667dfed75c3d22d91f14224db3a1
 -------------------
 
 2.4.14 (2017-06-24)

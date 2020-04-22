@@ -68,7 +68,10 @@ enum {
 GazeboRosDiffDrive::GazeboRosDiffDrive() {}
 
 // Destructor
-GazeboRosDiffDrive::~GazeboRosDiffDrive() {}
+GazeboRosDiffDrive::~GazeboRosDiffDrive() 
+{
+	FiniChild();
+}
 
 // Load the controller
 void GazeboRosDiffDrive::Load ( physics::ModelPtr _parent, sdf::ElementPtr _sdf )

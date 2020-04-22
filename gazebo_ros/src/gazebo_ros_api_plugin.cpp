@@ -28,12 +28,17 @@ namespace gazebo
 {
 
 GazeboRosApiPlugin::GazeboRosApiPlugin() :
-  physics_reconfigure_initialized_(false),
-  world_created_(false),
-  stop_(false),
   plugin_loaded_(false),
+  stop_(false),
   pub_link_states_connection_count_(0),
+<<<<<<< HEAD
   pub_model_states_connection_count_(0)
+=======
+  pub_model_states_connection_count_(0),
+  physics_reconfigure_initialized_(false),
+  pub_clock_frequency_(0),
+  world_created_(false)
+>>>>>>> 00a0064a1477667dfed75c3d22d91f14224db3a1
 {
   robot_namespace_.clear();
 }
@@ -2253,7 +2258,11 @@ bool GazeboRosApiPlugin::spawnAndConform(TiXmlDocument &gazebo_model_xml, std::s
   gazebo::physics::ModelPtr model = world_->GetModel(model_name);
   if (model)
   {
+<<<<<<< HEAD
     ROS_ERROR("SpawnModel: Failure - model name %s already exist.",model_name.c_str());
+=======
+    ROS_ERROR_NAMED("api_plugin", "SpawnModel: Failure - model name %s already exists.",model_name.c_str());
+>>>>>>> 00a0064a1477667dfed75c3d22d91f14224db3a1
     res.success = false;
     res.status_message = "SpawnModel: Failure - model already exists.";
     return true;

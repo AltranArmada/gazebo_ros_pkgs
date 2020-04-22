@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <package>
   <name>gazebo_ros</name>
+<<<<<<< HEAD
   <version>2.4.15</version>
+=======
+  <version>2.5.19</version>
+>>>>>>> 00a0064a1477667dfed75c3d22d91f14224db3a1
   <description>
     Provides ROS plugins that offer message and service publishers for interfacing with <a href="http://gazebosim.org">Gazebo</a> through ROS.
     Formally simulator_gazebo/gazebo
